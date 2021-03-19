@@ -48,7 +48,7 @@ function App() {
     } else {
       dispatch(loadPlaylists(getPlaylists));
     }
-  }, []);
+  }, [dispatch]);
   
   return (
       <Router>

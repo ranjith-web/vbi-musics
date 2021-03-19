@@ -10,11 +10,9 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import IconButton from '@material-ui/core/IconButton';
 import _ from 'lodash';
-import moment from 'moment';
 import Lists from './lists';
 import Tracks from './tracks';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
-import { setCache } from '../../service/appServices';
 import { alertService } from '../../service/alertService';
 import { addPlaylists, addTracks, deleteTracks } from '../../store/action/playlists_action';
 import './styles.css';
@@ -30,7 +28,6 @@ const useStyles = makeStyles((theme) => ({
 const Playlists = () => {
     const dispatch = useDispatch();
     const classes = useStyles();
-    const [ cSPlist, setCSPlist ] = useState(null);
     const [open, setOpen] = useState(false);
     const [plistName, setPlistName] = useState("");
     const [selectedPl, setSelectedPl] = useState({});

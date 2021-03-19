@@ -28,10 +28,10 @@ const TrackLists = (props) => {
                 </li>
                 <ul>
                     <li>
-                        <a href="#"><h4>{props.albumName}</h4></a>
+                        <span><h4>{props.albumName}</h4></span>
                     </li>
                     <li>
-                        <a href="#">{props.title}</a>
+                        <span>{props.title}</span>
                     </li>
                 </ul>
                 <div>
