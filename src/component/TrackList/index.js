@@ -15,6 +15,7 @@ const TrackLists = (props) => {
     const { onAddToPlaylist, onDeleteToPlaylist, mode, ...rest } = props;
     const addToListClass = props.mode ? "addTolist": "mHide";
     const classes = useStyles();
+
     
     return (
         <ul className="tracks margTop0"> 

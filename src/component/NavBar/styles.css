@@ -33,3 +33,6 @@ ul.right {
     display: flex;
     align-items: center;
 }
+.songs-menu{
+    border-right: 1px solid black;
+}

@@ -59,7 +59,7 @@ const Lists = ( { selectedPlist } ) => {
     return (
         <div className={classes.demo}>
             <List dense={dense}>
-            {playlists.length > 0 ? <Generate data={playlists} clickHandler={goToTracksOfPL}/> : <div className="nodatafound"><h4>No Data Found</h4></div>}
+                {playlists.length > 0 ? <Generate data={playlists} clickHandler={goToTracksOfPL}/> : <div className="nodatafound"><h4>No Data Found</h4></div>}
             </List>
         </div>
     );

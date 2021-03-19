@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import {
   BrowserRouter as Router,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import CircularProgress from '@material-ui/core/CircularProgress';
@@ -56,6 +57,9 @@ function App() {
           {albums.length > 0 ?   
             <main className="main">
               <Alert />
+              <Route exact path="/">
+                  <Redirect to="/allsongs" />
+              </Route>
               <Route exact path="/allsongs" component={AllSongs}/>
               <Route path='/playlists' component={Playlists}/>
             </main>       

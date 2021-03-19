@@ -65,6 +65,7 @@ const Playlists = () => {
     const handleSubmit = () => {
         addPlaylist();
         handleClose();
+        setPlistName("");
     }
 
     const selectedPlist = (pl) => {

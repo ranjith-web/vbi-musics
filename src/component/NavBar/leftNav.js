@@ -7,6 +7,10 @@ const LeftNav = () => (
       <Link to="/allsongs">VBI Musics</Link>
     </li>
 
+    <li className="songs-menu">
+      <Link to="/allsongs">Songs</Link>
+    </li>
+
     <li>
       <Link to="/playlists">Playlists</Link>
     </li>
