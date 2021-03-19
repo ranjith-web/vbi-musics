@@ -1,0 +1,11 @@
+.stream-splitter{
+    display: flex;
+    justify-content: space-between;
+}
+.removetitle{
+    border-bottom: none !important;
+    width: unset !important;
+}
+.add-playlist-icon{
+    color: #F50 !important;
+}

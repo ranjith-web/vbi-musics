@@ -1,0 +1,74 @@
+.allsongs, .playlists {
+    display: flex;
+    padding-top: 25px;
+}
+.stream {
+    width: 850px;
+}
+ul.stream-header {
+    border-bottom: 1px solid #f2f2f2;
+    margin-left: 20px;
+}
+.stream-header li {
+    border-bottom: 1px solid #F50;
+    width: 150px;
+}
+.stream-tracks li img {
+    width: 160px;
+    height: 160px;
+}
+h1 {
+    font-size: 24px;
+    color: #F50;
+    padding: 25px 10px 0;
+    margin: 0;
+}
+.small-play {
+    width: 36px;
+    height: 36px;
+    background-color: #F50;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 5px 0 20px;
+    position: relative;
+    top: -18px;
+    cursor: pointer;
+}
+.tracks {
+    margin: 25px;
+}
+ul.stream-tracks {
+    display: flex;
+    margin: 20px 0;
+    position: relative;
+    width: 650px;
+}
+.stream h4{
+    border: none;
+    margin: 0;
+    color: #ccc;
+    font-weight: normal;
+}
+.stream-tracks div {
+    position: absolute;
+    right: 0;
+    font-size: 11px;
+    color: #CCCCCC;
+}
+.stream-tracks div i {
+    font-size: 11px;
+    color: #CCCCCC;
+    padding: 2px;
+}
+.nodatafound{
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    font-size: 30px;
+}
+.nodatafound h4{
+    color: #F50
+}
