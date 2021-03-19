@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import API from '../service/API';
 import axios from 'axios'
 
 export default function useSongsSearch(query, pageNumber, limit) {
@@ -16,9 +17,9 @@ export default function useSongsSearch(query, pageNumber, limit) {
     setLoading(true)
     setError(false)
     let cancel
-    axios({
+    API({
       method: 'GET',
-      url: 'https://jsonplaceholder.typicode.com/photos',
+      url: '/photos',
       params: { q: query, page: pageNumber, _limit: limit },
       cancelToken: new axios.CancelToken(c => cancel = c)
     }).then(res => {
