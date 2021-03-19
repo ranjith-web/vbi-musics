@@ -32,7 +32,6 @@ function App() {
   const dispatch = useDispatch();
   const [ albums, setAlbums ] = useState([]); 
   useEffect(() => {
-    alert("hiii came in")
     async function fetchAlbums() {
         const resAlbums = await getAlbum();
         setAlbums(resAlbums.data);
